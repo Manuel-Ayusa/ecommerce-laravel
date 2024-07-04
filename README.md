@@ -1,23 +1,24 @@
-## Ecommerce Tienda De Ropa
+<h1>Ecommerce Tienda De Ropa</h1>
 Ecommerce desarrollado en el Framework Laravel.
 <h2>Sobre el sitio</h2>
-El mismo se trata de una tienda de ropa con todas las funciones que un ecommerce debe tener: carrito de compras, inicio de sesion opcional, una pasarella de pago intuitiva etc. 
+El mismo se trata de una tienda de ropa con todas las funciones que un ecommerce debe tener: carrito de compras, inicio de sesion opcional, una pasarella de pago intuitiva etc.<br>
 En este caso, la tienda esta configurada para ser una tienda de ropa solamente de hombre, pero se puede configurar como uno desee.
 
 <h2>Detalles Tecnicos</h2>
 <h3>General</h3>
-Se siguieron las practicas recomendadas por la documentacion oficial de Laravel, como ser la sintaxis, el uso adecuado de las funciones del programa, el uso adecuado del motor de plantillas Blade etc.
-El sitio posee una interfaz para el cliente y una interfaz distinta para el Usuario <b>Administrador</b>.
+Se siguieron las practicas recomendadas por la documentacion oficial de Laravel, como ser la sintaxis, el uso adecuado de las funciones del programa, el uso adecuado del motor de plantillas Blade etc.<br>
+El sitio posee una interfaz para el cliente y una interfaz distinta para el Usuario <b>Administrador</b>.<br>
 El sitio es totalmente responsivo para el cliente y para el Usuario Administrador, aunque para este ultimo se recomienda usar la version de computadora.
 <h3>Rutas</h3>
 Para un codigo mas ordenado y con mayor legibilidad se utiliza el route Controller para las rutas que pertenecen al mismo controlador.
 Se utiliza un middleware adicional escrito por mi, para denegar el acceso a determinadas rutas a usuarios NO Administradores.
+<h3>Vistas</h3>
+Se utiliza el motor de plantillas Blade.
 <h3>Autenticacion</h3>
 Se utiliza el kit de inicio Laravel Brezee que incluye inicio de sesión, registro, restablecimiento de contraseña, verificación de correo electrónico y confirmación de contraseña.
-
-
-
-
+<h3>Base de Datos</h3>
+Se utiliza Eloquent para administrar la BD, cada tabla de la base de datos tiene un "modelo" correspondiente que se utiliza para interactuar con esa tabla. Además de recuperar registros de la tabla de la base de datos, los modelos de Eloquent también le permiten insertar, actualizar y eliminar registros de la tabla.<br>
+La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos de estos(para esto se utlizan funciones birndadas por Laravel).
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
