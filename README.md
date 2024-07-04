@@ -18,7 +18,7 @@ Se utiliza el motor de plantillas Blade.
 Se utiliza el kit de inicio Laravel Brezee que incluye inicio de sesión, registro, restablecimiento de contraseña, verificación de correo electrónico y confirmación de contraseña.
 <h3>Base de Datos</h3>
 Se utiliza Eloquent para administrar la BD, cada tabla de la base de datos tiene un "modelo" correspondiente que se utiliza para interactuar con esa tabla. Además de recuperar registros de la tabla de la base de datos, los modelos de Eloquent también le permiten insertar, actualizar y eliminar registros de la tabla.<br>
-La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos de estos(para esto se utlizan funciones birndadas por Laravel).
+La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos dentro de estos(para esto se utlizan funciones birndadas por Laravel).
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
