@@ -42,7 +42,7 @@ Los Productos se guardan en la tabla "productos"(*imagen1) y (*imagen1.1). Cada 
 ![Captura de pantalla 2024-07-05 120119](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/bb4b52e8-2dd3-4bcd-b165-47713b64f660) <br>Al Seleccionar <b>Guardar</b> en(*imagen1.1) se desplega automaticamente el formulario para cargar uno o mas colores. 
 
 
-<h2>Como funciona el Carrito de Compras</h2>
+<h2>Carrito de Compras</h2>
 Cada usuario que entra al sitio queda registrado en la Base de Datos, en la tabla "sessions", con el numero de IP del navegador; En caso de que el usuario no haya iniciado sesion en nuestro sitio, este registro nos ayuda a relacionar a cada usuario con su carrito.
 Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(*imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del item(*imagen2) esta tabla su vez guarda las llaves foraneas(<b>cart_id </b> y <b>producto_id</b>).<br> <br>
 (*imagen1). ()<br>
@@ -58,9 +58,22 @@ Una vez que se añadio el primer producto, al añadir otros, solo se crean regis
 ![Captura de pantalla 2024-07-05 113226](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/b9c2ad8e-506d-4b3e-a159-776907924eb8)
 
  
-<h2>Como funcionan las Compras</h2>
+<h2>Compras</h2>
 Para hacer una compra se puede estar logueado en el sitio o no.
-Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc. <br> <br>
+Bien, primero que todo se debe añadir uno o mas objetos al carrito(*imagen1)(no se puede añadir un producto al carrito si no hay stock de este(*imagen1.1)). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc.(*imagen2) <br>
+
+(*imagen1). <br>
+
+
+(*imagen1.1). <br>
+
+
+(*imagen2). <br>
+
+
+
+<h3>Ordenes de Compra</h3>
+
 
 <h2>Sobre Laravel</h2>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
