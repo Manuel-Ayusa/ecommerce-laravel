@@ -20,6 +20,10 @@ Se utiliza el kit de inicio Laravel Brezee que incluye inicio de sesión, regist
 Se utiliza Eloquent para administrar la BD, cada tabla de la base de datos tiene un "modelo" correspondiente que se utiliza para interactuar con esa tabla. Además de recuperar registros de la tabla de la base de datos, los modelos de Eloquent también le permiten insertar, actualizar y eliminar registros de la tabla.<br>
 La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos dentro de estos(para esto se utlizan funciones birndadas por Laravel).
 
+<h2>Como funcionan las Compras</h2>
+Para hacer una compra se puede estar logueado o no.
+Bien, primero que todo se debe añadir uno o mas objetos al carrito. Luego ya en la vista del carrito se muestra todo el contenido de este y los detalles de los productos.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
