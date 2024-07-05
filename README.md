@@ -22,15 +22,33 @@ La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus
 <h3>Pasarela de Pago</h3>
 Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut Pro. Mas informacion sobre Chekaut Pro 
 
-<h2>Productos y Stock</h2>
+<h3>Productos y Stock</h3>
+Los Productos se guardan en la tabla "productos"(*imagen1) y (*imagen1.1). Cada producto puede tener uno o mas colores y con ellos su respectivo Stock(*imagen2) y (*imagen2.2). <br> 
+(*imagen1) <br>
+
+![Captura de pantalla 2024-07-05 114708](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/fff4161b-f775-40b2-a7a5-41928ee2ef2e) <br>Base de Datos<br><br>
+
+(*imagen1.1) <br>
+
+![Captura de pantalla 2024-07-05 120030](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/f4364ccb-ef34-487c-a3a9-9a0e41c005d7) <br>Vista de administrador<br><br>
+
+
+(*imagen2) <br>
+
+![Captura de pantalla 2024-07-05 114733](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/3f4c6f18-7425-4ac2-bf9f-00d3dcab0150) <br>Base de Datos<br><br>
+
+(*imagen2.2) <br>
+
+![Captura de pantalla 2024-07-05 120119](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/bb4b52e8-2dd3-4bcd-b165-47713b64f660) <br>Al Seleccionar <b>Guardar</b> en(*imagen1.1) se desplega automaticamente el formulario para cargar uno o mas colores. 
 
 
 <h2>Como funciona el Carrito de Compras</h2>
 Cada usuario que entra al sitio queda registrado en la Base de Datos, en la tabla "sessions", con el numero de IP del navegador; En caso de que el usuario no haya iniciado sesion en nuestro sitio, este registro nos ayuda a relacionar a cada usuario con su carrito.
 Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(*imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del item(*imagen2) esta tabla su vez guarda las llaves foraneas(<b>cart_id </b> y <b>producto_id</b>).<br> <br>
-(*imagen1). (En el primer registro se muestra un usuario no logueado en el sitio y en el segundo registro un usuario que si ha iniciado sesion)<br>
+(*imagen1). ()<br>
 
-![Captura de pantalla 2024-07-05 103523](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/33064125-54c6-4152-ad78-71d1a7228316) <br> <br>
+![Captura de pantalla 2024-07-05 103523](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/33064125-54c6-4152-ad78-71d1a7228316) <br>
+En el primer registro se muestra un usuario no logueado en el sitio y en el segundo registro un usuario que si ha iniciado sesion. <br> <br> 
 (*imagen2)<br>
 
 ![Captura de pantalla 2024-07-05 105755](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/a31c33b1-416e-413b-8a30-cfcfe2509ae8) <br> <br>
