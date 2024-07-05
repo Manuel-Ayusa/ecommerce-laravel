@@ -6,7 +6,7 @@ En este caso, la tienda esta configurada para ser una tienda de ropa solamente d
 
 <h2>Detalles Tecnicos</h2>
 <h3>General</h3>
-Se siguieron las practicas recomendadas por la documentacion oficial de Laravel, como ser la sintaxis, el uso adecuado de las funciones del programa, el uso adecuado del motor de plantillas Blade etc.<br>
+Se siguieron las practicas recomendadas por la documentacion oficial de Laravel, como ser: la sintaxis, el uso adecuado de las funciones del programa, el uso adecuado del motor de plantillas Blade etc.<br>
 El sitio posee una interfaz para el cliente y una interfaz distinta para el Usuario <b>Administrador</b>.<br>
 El sitio es totalmente responsivo para el cliente y para el Usuario Administrador, aunque para este ultimo se recomienda usar la version de computadora.
 <h3>Rutas</h3>
@@ -18,11 +18,22 @@ Se utiliza el motor de plantillas Blade.
 Se utiliza el kit de inicio Laravel Brezee que incluye inicio de sesión, registro, restablecimiento de contraseña, verificación de correo electrónico y confirmación de contraseña.
 <h3>Base de Datos</h3>
 Se utiliza Eloquent para administrar la BD, cada tabla de la base de datos tiene un "modelo" correspondiente que se utiliza para interactuar con esa tabla. Además de recuperar registros de la tabla de la base de datos, los modelos de Eloquent también le permiten insertar, actualizar y eliminar registros de la tabla.<br>
-La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos dentro de estos(para esto se utlizan funciones birndadas por Laravel).
+La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos dentro de estos(para esto se utlizan funciones brindadas por Laravel).
+<h3>Pasarela de Pago</h3>
+Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut Pro. Mas informacion sobre Chekaut Pro 
+
+<h2>Productos y Stock</h2>
+
+
+<h2>Como funciona el Carrito de Compras</h2>
+Cada usuario que entra al sitio queda registrado en la Base de Datos, en la tabla "sessions", con el numero de IP del navegador; En caso de que el usuario no haya iniciado sesion en nuestro sitio, este registro nos ayuda a relacionar a cada usuario con su carrito.
+Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del producto que a su vez guarda la llave foranea que lo relaciona con el carrito del usuario.
+imagen1
+
 
 <h2>Como funcionan las Compras</h2>
-Para hacer una compra se puede estar logueado o no.
-Bien, primero que todo se debe añadir uno o mas objetos al carrito. Luego ya en la vista del carrito se muestra todo el contenido de este y los detalles de los productos.
+Para hacer una compra se puede estar logueado en el sitio o no.
+Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
