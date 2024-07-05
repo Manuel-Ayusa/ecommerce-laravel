@@ -27,11 +27,19 @@ Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut P
 
 <h2>Como funciona el Carrito de Compras</h2>
 Cada usuario que entra al sitio queda registrado en la Base de Datos, en la tabla "sessions", con el numero de IP del navegador; En caso de que el usuario no haya iniciado sesion en nuestro sitio, este registro nos ayuda a relacionar a cada usuario con su carrito.
-Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del producto que a su vez guarda la llave foranea que lo relaciona con el carrito del usuario.
-(imagen1).
-![Captura de pantalla 2024-07-05 103523](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/1c57775a-f9d0-4001-984c-321007af9050)
+Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(*imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del item(*imagen2) esta tabla su vez guarda las llaves foraneas(<b>cart_id </b> y <b>producto_id</b>).<br> <br>
+(*imagen1). (En el primer registro se muestra un usuario no logueado en el sitio y en el segundo registro un usuario que si ha iniciado sesion)<br>
 
+![Captura de pantalla 2024-07-05 103523](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/33064125-54c6-4152-ad78-71d1a7228316) <br> <br>
+(*imagen2)<br>
 
+![Captura de pantalla 2024-07-05 105755](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/a31c33b1-416e-413b-8a30-cfcfe2509ae8) <br> <br>
+Una vez que se añadio el primer producto, al añadir otros, solo se crean registros en la tabla "cart_productos" relacionados al carrito del cliente(una relacion de muchos a uno)(*imagen3). <br>
+(*imagen3). <br>
+
+![Captura de pantalla 2024-07-05 113226](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/b9c2ad8e-506d-4b3e-a159-776907924eb8)
+
+ 
 <h2>Como funcionan las Compras</h2>
 Para hacer una compra se puede estar logueado en el sitio o no.
 Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc.
