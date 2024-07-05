@@ -60,22 +60,10 @@ Una vez que se añadio el primer producto, al añadir otros, solo se crean regis
  
 <h2>Compras</h2>
 Para hacer una compra se puede estar logueado en el sitio o no.
-Bien, primero que todo se debe añadir uno o mas objetos al carrito(*imagen1)(no se puede añadir un producto al carrito si no hay stock de este(*imagen1.1)). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc.(*imagen2) <br>
-
-(*imagen1). <br>
-
-
-
-(*imagen1.1). <br>
-
-
-
-(*imagen2). <br>
-
-
-
-<h3>Ordenes de Compra</h3>
-
+Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser: la cantidad de los mismos, el talle, precio etc.<br>
+Al seleccionar <b>Empezar Compra</b> el sitio te redirige a un formulario llamado <b>Detalles de Compra</b> donde el cliente debe llenar cada uno de los campos con su informacion personal(Nombre, DNI, Email); A su vez tiene que elegir si prefiere que la compra sea con Envio o si el mismo retira el articulo de la tienda. En el caso que la compra sea con envio se despliega dinamicamente un formulario que debe llenar con los detalles de su direccion(Provincia, Localidad, Calle, Numero, CP). En esta vista tambien se muestran el costo de envio(si lo hay) y el costo total de los productos.<br>
+Al seleccionar <b>Comenzar Pago</b> se lleva al usuario a una vista que muestra el resumen de toda la informacion: Informacion de los productos que esta comprando, su informacion Personal, y la informacion de envio. Junto a esto el subtotal y total de la compra. Cuando el usuario corrobora que toda la informacion sea correcta puede empezar el pago. <br>
+Al hacer click en <b>Comprar con Mercado Pago</b> se redirige al usuario a la interfaz del SDK de Mercado Pago, donde puede elegir el Pago en efectivo, con tarjeta de credito o debito y otras opciones mas. <br>
 
 <h2>Sobre Laravel</h2>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
