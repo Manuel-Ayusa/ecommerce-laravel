@@ -65,7 +65,9 @@ Bien, primero que todo se debe añadir uno o mas objetos al carrito(*imagen1)(no
 (*imagen1). <br>
 
 
+
 (*imagen1.1). <br>
+
 
 
 (*imagen2). <br>
