@@ -28,7 +28,8 @@ Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut P
 <h2>Como funciona el Carrito de Compras</h2>
 Cada usuario que entra al sitio queda registrado en la Base de Datos, en la tabla "sessions", con el numero de IP del navegador; En caso de que el usuario no haya iniciado sesion en nuestro sitio, este registro nos ayuda a relacionar a cada usuario con su carrito.
 Cuando el usuario añade su primer Articulo al carrito se crea un registro en la tabla "carts"(imagen1), cuando este es creado, al instante se crea otro registro en la tabla "cart_productos" donde se guardan los registros con los detalles del producto que a su vez guarda la llave foranea que lo relaciona con el carrito del usuario.
-imagen1
+(imagen1).
+![Captura de pantalla 2024-07-05 103523](https://github.com/Manuel-Ayusa/ecommerce-laravel/assets/166891950/1c57775a-f9d0-4001-984c-321007af9050)
 
 
 <h2>Como funcionan las Compras</h2>
