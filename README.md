@@ -60,8 +60,9 @@ Una vez que se añadio el primer producto, al añadir otros, solo se crean regis
  
 <h2>Como funcionan las Compras</h2>
 Para hacer una compra se puede estar logueado en el sitio o no.
-Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc.
+Bien, primero que todo se debe añadir uno o mas objetos al carrito(no se puede añadir un producto al carrito si no hay stock de este). Luego, ya en la vista del carrito, se muestra todo su contenido y los detalles de los productos como ser la cantidad de los mismos, el talle, precio etc. <br> <br>
 
+<h2>Sobre Laravel</h2>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
