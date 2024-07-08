@@ -20,7 +20,7 @@ Se utiliza el kit de inicio Laravel Brezee que incluye inicio de sesión, regist
 Se utiliza Eloquent para administrar la BD, cada tabla de la base de datos tiene un "modelo" correspondiente que se utiliza para interactuar con esa tabla. Además de recuperar registros de la tabla de la base de datos, los modelos de Eloquent también le permiten insertar, actualizar y eliminar registros de la tabla.<br>
 La BD utilizada en el sitio es relacional. La misma se relaciona a travez de sus modelos con metodos escritos dentro de estos(para esto se utlizan funciones brindadas por Laravel).
 <h3>Pasarela de Pago</h3>
-Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut Pro. Mas informacion sobre Chekaut Pro 
+Para realizar y procesar los pagos se utiliza el SDK de Mercado Pago, Checkaut Pro. Mas informacion sobre Chekout Pro 
 
 <h3>Productos y Stock</h3>
 Los Productos se guardan en la tabla "productos"(*imagen1) y (*imagen1.1). Cada producto puede tener uno o mas colores y con ellos su respectivo Stock(*imagen2) y (*imagen2.2). <br> 
