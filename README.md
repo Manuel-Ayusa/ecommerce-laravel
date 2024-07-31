@@ -1,5 +1,5 @@
 <h1>Ecommerce Tienda De Ropa</h1>
-Ecommerce desarrollado en el Framework Laravel.
+Ecommerce desarrollado con el Framework Laravel.
 <h2>Sobre el sitio</h2>
 El mismo se trata de una tienda de ropa con todas las funciones que un ecommerce debe tener: carrito de compras, inicio de sesion opcional, una pasarella de pago intuitiva etc.<br>
 En este caso, la tienda esta configurada para ser una tienda de ropa solamente de hombre, pero se puede configurar como uno desee.
