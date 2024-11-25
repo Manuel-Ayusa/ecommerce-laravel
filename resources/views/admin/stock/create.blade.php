@@ -4,10 +4,10 @@
 
 @section('content')
     <h2 class="p-0 py-3 m-0 text-center display-5 border-bottom mb-3">Agregar Producto</h2>
-    <a href="{{route('productos.administrar')}}" class="btn btn-white border mb-3">Volver atras</a>
+    <a href="{{url()->previous()}}" class="btn btn-white border mb-3">Volver atras</a>
 
     <section class="d-flex justify-content-center">
-        <form action="{{route('productos.storeStock')}}" method="post" enctype="multipart/form-data" class="col-5 border p-3 rounded">
+        <form action="{{route('stock.store')}}" method="post" enctype="multipart/form-data" class="col-5 border p-3 rounded">
             
             @csrf
 

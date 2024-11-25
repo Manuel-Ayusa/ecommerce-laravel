@@ -35,7 +35,7 @@
                         <td>{{$producto->categoria}}</td>
                         <td>{{$producto->descripcion}}</td>
                         <td>{{$producto->precio}}</td>
-                        <td><a href="{{route('productos.stock', $producto->id)}}" class="btn btn-primary">Ver Stock</a></td>
+                        <td><a href="{{route('stock.show', $producto->id)}}" class="btn btn-primary">Ver Stock</a></td>
                         <td><a href="{{route('productos.edit', $producto->id)}}" class="btn btn-warning">Modificar</a></td>
                         <td><a href="{{route('productos.destacar', $producto->id)}}" class="btn btn-primary">@if ($producto->destacado == 0) Destacar @else Indestacar @endif</a></td>
                         <td>

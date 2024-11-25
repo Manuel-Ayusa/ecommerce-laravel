@@ -4,9 +4,9 @@
 
 @section('content')
     <h2 class="p-0 py-3 m-0 text-center fs-2 border-bottom mb-3">Modificar Stock del Producto: {{$name}}</h2>
-    <a href="{{route('productos.administrar')}}" class="btn btn-white border mb-3">Volver atras</a>
+    <a href="{{url()->previous()}}" class="btn btn-white border mb-3">Volver atras</a>
     <section class="d-flex justify-content-center">
-        <form action="{{route('productos.update_stock', $item->id)}}" method="post" enctype="multipart/form-data" class="col-5 border p-3 rounded">
+        <form action="{{route('stock.update', $item->id)}}" method="post" enctype="multipart/form-data" class="col-5 border p-3 rounded">
             
             @csrf
             @method('patch')

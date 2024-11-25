@@ -30,15 +30,6 @@
                 <input type="number" name="precio" id="pre" step="0.05" value="{{$producto->precio}}" class="form-control">
             </section>
 
-            <section>
-                <label for="ft1">1° Foto:</label>
-                <input type="file" name="ft1" id="ft1" value="{{$producto->imagen1}}" class="form-control">
-         
-            <section>
-                <label for="ft2">2° Foto &#10098;opcional&#10099; :</label>
-                <input type="file" name="ft2" id="ft2" value="{{$producto->imagen2}}" class="form-control">
-            </section>
-
             <section class="text-center">
                 <input type="submit" value="Actualizar y Guardar" class="mt-3 form-control btn btn-primary">
             </section>
